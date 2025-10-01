@@ -99,52 +99,6 @@ Dogecoin (DOGE)
 
 Avalanche (AVAX)
 ----------------------------------------------
-Project Structure
-
-yebelo-project/
-├── Infrastructure
-│   ├── docker-compose.yml
-│   └── redpanda-console-config.yml
-│
-├──  Data & Ingestion
-│   └── data-ingestion/
-│       ├── ingest.py
-│       ├── requirements.txt
-│       └── trades_data.csv
-│
-├── Backend (Rust)
-│   └── rsi-calculator/
-│       ├── Cargo.toml
-│       ├── Cargo.lock
-│       └── src/
-│           ├── main.rs
-│           ├── models.rs
-│           └── rsi_calculator.rs
-│
-├── Frontend (Next.js)
-│   └── frontend/
-│       ├── app/
-│       │   ├── api/
-│       │   │   ├── trades/route.ts
-│       │   │   ├── rsi/route.ts
-│       │   │   └── symbols/route.ts
-│       │   ├── layout.tsx
-│       │   ├── page.tsx
-│       │   ├── types.ts
-│       │   └── globals.css
-│       ├── components/
-│       │   ├── TokenSelector.tsx
-│       │   ├── PriceChart.tsx
-│       │   ├── RSIChart.tsx
-│       │   └── MetricsPanel.tsx
-│       ├── package.json
-│       └── config files...
-│
-└── Documentation
-    ├── README.md
-    └── check-topics.sh
-----------------------------------------------
-
 Development
 Adding New Cryptocurrencies
 Add data to data/trades_data.csv
