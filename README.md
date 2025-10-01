@@ -1,6 +1,5 @@
 RSI Dashboard
 A real-time cryptocurrency monitoring system that calculates and displays Relative Strength Index (RSI) for major cryptocurrencies using Redpanda, Rust, and Next.js.
-
 ---------------------------------------------------
 
 Features
