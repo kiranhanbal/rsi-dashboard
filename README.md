@@ -39,13 +39,18 @@ Rust (optional, for development)
 -------------------------------------
 
 Quick Start
+---------------------------------------------------
 
-1. Clone and Setup
+
+Clone and Setup
+   ---------------------------------------------------
 
 git clone <repo-url>
 cd yebelo-project
 
-2. Phase 1: Infrastructure Setup
+Phase 1: Infrastructure Setup
+ ---------------------------------------------------
+   
 
 # Start Redpanda
 docker-compose up -d
@@ -58,7 +63,9 @@ docker-compose exec redpanda rpk topic create rsi-data --brokers localhost:29092
 # Verify
 docker-compose exec redpanda rpk topic list --brokers localhost:29092
 
-3. Phase 2: Data Ingestion
+Phase 2: Data Ingestion
+---------------------------------------------------
+
 cd data-ingestion
 
 # Install dependencies
@@ -67,14 +74,18 @@ pip install kafka-python pandas
 # Stream sample data
 python ingest.py /home/kiran-v-d/yebelo-project/data-ingestion/trades_data.csv
 
-4. Phase 3: RSI Calculator
+Phase 3: RSI Calculator
+---------------------------------------------------
+
 
 cd rsi-calculator
 
 # Build and run RSI calculator
 cargo run
 
-5. Phase 4: Frontend Dashboard
+Phase 4: Frontend Dashboard
+---------------------------------------------------
+
 
 cd frontend
 
