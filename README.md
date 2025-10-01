@@ -45,7 +45,8 @@ Quick Start
 Clone and Setup
    ---------------------------------------------------
 
-git clone <repo-url>
+git clone https://github.com/kiranhanbal/rsi-dashboard.git
+
 cd yebelo-project
 
 Phase 1: Infrastructure Setup
