@@ -50,6 +50,7 @@ docker-compose up -d
 
 # Create topics (using actual structure)
 docker-compose exec redpanda rpk topic create trade-data --brokers localhost:29092
+
 docker-compose exec redpanda rpk topic create rsi-data --brokers localhost:29092
 
 # Verify
