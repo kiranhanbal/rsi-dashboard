@@ -1,5 +1,6 @@
 RSI Dashboard
 A real-time cryptocurrency monitoring system that calculates and displays Relative Strength Index (RSI) for major cryptocurrencies using Redpanda, Rust, and Next.js.
+
 ---------------------------------------------------
 
 Features
@@ -12,6 +13,7 @@ Interactive Dashboard: Professional UI with price and RSI charts
 Multi-token Support: BTC, ETH, SOL, DOGE, AVAX
 
 Overbought/Oversold Indicators: Clear RSI level visualization
+
 ----------------------------------------------
 
 Tech Stack
@@ -34,6 +36,7 @@ Python 3.8+
 Node.js 18+
 
 Rust (optional, for development)
+
 -------------------------------------
 
 Quick Start
@@ -81,11 +84,13 @@ npm install
 
 # Start development server
 npm run dev
+
 ------------------------------------------
 Access Applications
 Dashboard: http://localhost:3000
 
 Redpanda Console: http://localhost:8080
+
 -------------------------------------------
 Sample Data
 The project includes sample data for 5 cryptocurrencies:
@@ -99,22 +104,27 @@ Solana (SOL)
 Dogecoin (DOGE)
 
 Avalanche (AVAX)
+
 ----------------------------------------------
 Development
 Adding New Cryptocurrencies
 Add data to data/trades_data.csv
 
 Update symbol list in frontend/app/page.tsx
+
 ---------------------------------------------
 
 Modifying RSI Period
 Edit the period in rsi-processor/src/main.rs:
 
 let mut rsi_calc = RSICalculator::new(14); // Change 14 to desired period
+
 ------------------------------------------------------------------
 
 Customizing Dashboard
+
 Modify components in frontend/components/ for UI changes.
+
 -----------------------------------------------------------------
 
 Troubleshooting
@@ -126,6 +136,7 @@ docker-compose down
 
 # Start fresh
 docker-compose up -d
+
 ----------------------------------
 RSI Interpretation
 Overbought: RSI > 70 (Consider selling)
@@ -133,4 +144,5 @@ Overbought: RSI > 70 (Consider selling)
 Oversold: RSI < 30 (Consider buying)
 
 Neutral: RSI between 30-70
+
 -----------------------------------------
