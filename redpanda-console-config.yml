@@ -1,0 +1,15 @@
+# Redpanda Console configuration
+kafka:
+  brokers: ["redpanda:29092"]
+
+console:
+  # Serve the web interface on the configured port
+  serveFrontend: true
+  
+  # Topic documentation settings
+  topics:
+    # Enable topic creation
+    enabled: true
+    
+    # Allow deleting topics
+    allowDelete: true

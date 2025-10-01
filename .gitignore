@@ -1,0 +1,22 @@
+# Build outputs
+frontend/.next/
+frontend/node_modules/
+rsi-calculator/target/
+
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+
+# Environment files
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# System
+.DS_Store
+Thumbs.db
