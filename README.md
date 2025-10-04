@@ -64,7 +64,7 @@ docker-compose exec redpanda rpk topic create rsi-data --brokers localhost:29092
 # Verify
 docker-compose exec redpanda rpk topic list --brokers localhost:29092
 
-#Delete the Data Topic
+# Delete the Data Topic
 docker-compose exec redpanda rpk topic delete data --brokers localhost:29092
 
 Phase 2: Data Ingestion
